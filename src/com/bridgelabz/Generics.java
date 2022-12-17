@@ -2,15 +2,15 @@ package com.bridgelabz;
 
 public class Generics {
 
-    static void maximumOfVariables(int num1, int num2, int num3){
-        if(num1 > num2){
-            if(num1 > num3){
+    static void maximumOfVariables(Integer num1, Integer num2, Integer num3){
+        if(num1.compareTo(num2) == 1){
+            if(num1.compareTo(num3) == 1){
                 System.out.println( num1 + " is Maximum ");
             }else {
                 System.out.println( num3 + " is greater ");
             }
         }else{
-            if(num2 > num3){
+            if(num2.compareTo(num3) == 1){
                 System.out.println( num2 + " is maximum ");
             }else{
                 System.out.println( num3 + " is maximum ");
