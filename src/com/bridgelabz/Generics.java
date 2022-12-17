@@ -17,7 +17,24 @@ public class Generics {
         }
     }
 
+    static void maximumOfVariables(Float num1, Float num2, Float num3){
+        if(num1.compareTo(num2) == 1){
+            if(num1.compareTo(num3) == 1){
+                System.out.println( num1 + " is Maximum ");
+            }else {
+                System.out.println( num3 + " is greater ");
+            }
+        }else{
+            if(num2.compareTo(num3) == 1){
+                System.out.println( num2 + " is maximum ");
+            }else{
+                System.out.println( num3 + " is maximum ");
+            }
+        }
+    }
+
     public static void main(String[] args) {
        maximumOfVariables(3,1,90);
+       maximumOfVariables(3.1f,10.8f,90f);
     }
 }
